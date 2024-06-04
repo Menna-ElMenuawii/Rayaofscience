@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* إضافة هذا لتفادي مشاكل التصميم */
+}
+
+body {
+    font-family: 'Amiri', sans-serif;
+    background-color: #fff; /* تغيير لون الخلفية إلى الأبيض */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+marquee
+{
+    margin-top: 30px;
+}
+
+header {
+    background: rgba(244, 240, 240, 0.818);
+    padding: 10px; /* تغيير هامش الرأس ليكون متساوياً من الجميع */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    margin-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    padding: 10px 15px; /* تقليل الهوامش في الروابط */
+    border: 0px solid rgb(74, 73, 73); /* تغيير الحدود إلى حاشية واحدة ولون مختلف */
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+}
+a
+{
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: coral;
+    color: white;
+}
+
+button {
+    background: radial-gradient(at bottom right, rgb(235, 71, 11), rgb(242, 181, 68));
+    border-radius: 15px;
+    width: 150px;
+    border: none;
+    color: rgb(2, 2, 2);
+    height: 40px;
+    margin-right: 20px; /* تقليل الهوامش من اليمين */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+button:hover {
+    background: radial-gradient(at bottom right, rgb(3, 91, 3), rgb(117, 240, 117));
+    color: white;
+}
+
+.heading {
+    color: white;
+    background-color: darkgreen;
+    width: 200px;
+    height: 60px;
+    margin-top: 15px;
+    border-radius: 30px 60px;
+}
+
+marquee {
+    font-size: 15px;
+    color: darkgreen;
+    direction: ltr;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h2 {
+    color: darkolivegreen;
+    font-size: 30px;
+    margin: 0; /* تغيير هامش العنوان */
+}
+
+.slide {
+    min-width: 45%;
+    height: 600px;
+    overflow: hidden;
+    scroll-snap-align: center;
+    border-radius: 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sliders {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow: auto; /* تغيير النمط إلى التمرير */
+    scroll-snap-type: x mandatory;
+    padding: 40px;
+}
+
+.slide p {
+    font-size: 20px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgreen;
+    border-radius: 4px;
+}
+.main 
+{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* توسيط العناصر أفقيًا */
+        align-items: center; /* توسيط العناصر عموديًا */
+        gap: 10px; /* إضافة هامش بين العناصر */
+    
+}
+
+.cards {
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin: 10px;
+    text-align: center; /* توسيط المحتوى عموديًا */
+    display: inline-block;
+}
+
+
+.cards button {
+    width: 150px;
+    text-align: center;
+    margin: 10px 0; /* تعديل الهوامش */
+}
+
+.cards p {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    padding: 10px 0;
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+}
+
+.des {
+    text-align: center;
+}
+
+/* أضف قواعد CSS للقسمين "raya" و "dam-family" و "container" و "contact-box" حسب تصميمك */
+/* تابع القسم "raya" */
+.raya .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.raya .row .img-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.raya .row .img-container img {
+    width: 70%;
+    border: 1rem solid rgba(230, 252, 226, 0.873);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.782);
+    height: 70%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.raya .row .img-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: white;
+    width: 70%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.raya .row .content {
+    flex: 1 1 40rem;
+}
+
+.raya .row .content h3 {
+    font-size: 3rem;
+    color: darkgreen;
+}
+
+.raya .row .content p {
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+/* تابع القسم "dam-family" */
+.dam-family .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.dam-family .row .img-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.dam-family .row .img-container img {
+    width: 50%;
+    border: 1rem solid rgba(223, 100, 6, 0.873);
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.782);
+    height: 50%;
+    object-fit: cover;
+    margin-right: 80px;
+}
+
+.dam-family .row .img-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: white;
+    width: 70%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.dam-family .row .content {
+    flex: 1 1 40rem;
+}
+
+.dam-family .row .content h3 {
+    font-size: 3rem;
+    color: darkgreen;
+}
+
+.dam-family .row .content p {
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+/* تابع القسم "container" و "contact-box" */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(252, 253, 253, 0.973); /* تعديل اللون مع الشفافية */
+    box-shadow: 0 0 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.contact-box .left {
+    background: url('WhatsApp Image 2023-09-30 at 22.17.14_6dbe9135.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.contact-box .right {
+    padding: 25px 40px;
+}
+
+.contact-box .right h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+.contact-box .right h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: darkgreen;
+}
+
+.contact-box .field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 252, 226, 0.849);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.contact-box .field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-box textarea {
+    min-height: 150px;
+}
+
+.contact-box .btn {
+    width: 300px;
+    padding: 0.5rem 1rem;
+    background: radial-gradient(at bottom right, coral, orange);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box .btn:hover {
+    background: radial-gradient(at bottom right, darkgreen, green);
+}

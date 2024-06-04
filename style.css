@@ -1,0 +1,698 @@
+ @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* إضافة هذا لتفادي مشاكل التصميم */
+}
+
+body {
+    font-family: 'Amiri', sans-serif;
+    background-color: #fff; /* تغيير لون الخلفية إلى الأبيض */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+marquee
+{
+    margin-top: 30px;
+}
+
+
+header {
+    background: rgba(244, 240, 240, 0.818);
+    padding: 10px; /* تغيير هامش الرأس ليكون متساوياً من الجميع */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#logo img {
+    width: 90px;
+     /* height: 70px;  */
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    margin-right: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    padding: 10px 15px; /* تقليل الهوامش في الروابط */
+    border: 0px solid rgb(74, 73, 73); /* تغيير الحدود إلى حاشية واحدة ولون مختلف */
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    background: coral;
+    color: white;
+}
+
+button {
+    background: radial-gradient(at bottom right, rgb(235, 71, 11), rgb(242, 181, 68));
+    border-radius: 15px;
+    width: 105px;
+    border: none;
+    color: rgb(2, 2, 2);
+    height: 40px;
+    margin-right: 20px; /* تقليل الهوامش من اليمين */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+button:hover {
+    background: radial-gradient(at bottom right, rgb(3, 91, 3), rgb(117, 240, 117));
+    color: white;
+}
+
+.heading {
+    color: white;
+    background-color: darkgreen;
+    width: 300px;
+    height: 60px;
+    margin-top: 3px;
+    padding-top:8px;
+    border-radius:15px;
+    margin-bottom: 15px;
+}
+
+marquee {
+    font-size: 15px;
+    color: darkgreen;
+    direction: ltr;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h2 {
+    color: darkolivegreen;
+    font-size: 30px;
+    margin: 0; /* تغيير هامش العنوان */
+}
+h3
+{
+    color: green;
+}
+
+.month
+{
+    text-align: center;
+}
+.button-container
+{
+   display: inline-block;
+   background:rgb(227, 227, 226);
+   border-radius: 5px;
+}
+.button-container button
+{
+    margin-top: 20px;
+    border-radius: 10px;
+    background: white;
+    color: darkgreen;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.button-container button:hover
+{
+    background: coral;
+    color: white;
+}
+
+
+
+.slide {
+    min-width: 45%;
+    height: 600px;
+    overflow: hidden;
+    scroll-snap-align: center;
+    border-radius: 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sliders {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow: auto; /* تغيير النمط إلى التمرير */
+    scroll-snap-type: x mandatory;
+    padding: 40px;
+}
+
+.slide p {
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(gray);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgreen;
+    width: 5px;
+    border-radius: 4px;
+}
+
+.raya .row {
+    display: flex;
+    
+    align-items: center;
+    
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.raya .row .img-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.raya .row .img-container img {
+    width: 50%;
+    border: 1rem darkgreen;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.782);
+    height: 50%; 
+    object-fit: cover;
+    margin-right: 80px;
+}
+
+.raya .row .img-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: white;
+    width: 70%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.raya .row .content {
+    flex: 1 1 40rem;
+}
+
+.raya.row .content h2 {
+    font-size: 3rem;
+    color: darkgreen;
+}
+
+.raya .row .content p {
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+.main 
+{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* توسيط العناصر أفقيًا */
+        align-items: center; /* توسيط العناصر عموديًا */
+        gap: 10px; /* إضافة هامش بين العناصر */
+    
+}
+
+.cards {
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin: 10px;
+    text-align: center; /* توسيط المحتوى عموديًا */
+    display: inline-block;
+}
+
+
+.cards button {
+    width: 150px;
+    text-align: center;
+    margin: 10px 0; /* تعديل الهوامش */
+}
+
+.cards p {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    padding: 10px 0;
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+}
+
+.des {
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(252, 253, 253, 0.973); /* تعديل اللون مع الشفافية */
+    box-shadow: 0 0 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.contact-box .left {
+    background: url(images/logo.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.contact-box .right {
+    padding: 25px 40px;
+}
+
+.contact-box .right h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+.contact-box .right h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: darkgreen;
+}
+
+.contact-box .field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 252, 226, 0.849);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.contact-box .field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-box textarea {
+    min-height: 150px;
+}
+
+.contact-box .btn {
+    width: 300px;
+    padding: 0.5rem 1rem;
+    background: radial-gradient(at bottom right, darkgreen, green);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-box .btn:hover
+{
+    background:  radial-gradient(at bottom right, rgb(235, 71, 11), rgb(242, 181, 68));
+}
+
+
+footer {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4c4a4af8;
+    padding: 10px;
+}
+footer p{
+    font-size: 1rem;
+    color: aliceblue;
+}
+.left-section
+{
+    margin-right: 6%;
+}
+.left-section h3{
+    margin-bottom: 4%;
+    font-size: 1.5rem;
+    color: #94cab3;
+}
+.right-section h3{
+    margin-bottom: 4%;
+    font-size: 1.5rem;
+    color: #94cab3;
+}
+
+.right-section  .text{
+    color: white;
+}
+
+.right-section p{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.right-section a i{
+    
+    /* display: flex;
+    align-items: center; */
+    padding: 10px 10px;
+    min-width: 65px;
+    font-size: 22px;
+    color:white;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+}
+
+.center-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 17%;
+}
+.center-section img{
+width: 70px;
+/* height: 70px;  */
+border-radius: 50%;
+box-shadow: 0 0 10px black;
+margin-right: 30px;
+}
+.right-section {
+    text-align: right;
+
+}
+
+
+
+
+.copyright-bar {
+  
+    background-color: #e4f0ed;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright-bar p{
+    color: #000000;
+    align-items: center;
+    margin: 0;
+    margin-right: 30%;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin-right: 8px; 
+}
+.social-icons i:hover
+{
+    color: coral;
+}
+
+
+
+@media screen  and (min-width: 340px) and (max-width: 768px)
+{
+    body{
+        
+        max-width: 100%;
+        
+    }
+    .mag{
+        margin-right: 17%;
+    }
+    header {
+       
+      display: none;
+    }
+
+    .heading{
+      
+        width: 195px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-left: -7%;
+    }
+
+    .main-container
+    {
+        margin-right: 12%;
+    }
+    .slide {
+        min-width: 130%;
+        height: auto; 
+        margin-right: 17%;
+        }
+
+        .raya
+        {
+            margin-right: 10%;
+        }
+    .raya .row {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .raya .row .img-container {
+        flex: none;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .raya .row .img-container img {
+        width: 50%;
+        height: auto;
+        margin-right: 9%;
+        margin-bottom: 1rem;
+    }
+
+    .raya .row .img-container h3 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .raya .row .content {
+        flex: none;
+        width: 100%;
+    }
+    .content h2{
+        white-space: nowrap;
+        font-size: 1.4rem;
+        margin-right: 6%;
+    }
+    
+    
+    .raya .row .content p{
+      
+        font-size: 1.4rem;
+        margin-right: 9%;
+    }
+    .raya .row .content button {
+        width: 120px;
+        
+    }
+
+    .month{
+        margin-right: 18%;
+    }
+    .button-container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .button-container button {
+            
+            margin: 3px;
+            border-radius: 10px;
+            width: calc(24.35% - 10px);
+            background: white;
+            color: darkgreen;
+        }
+        .button-container button:hover {
+            background: coral;
+            color: white;
+        }
+        .cards{
+            margin-right: 20%;
+            height: 100%;
+          
+        }
+        .families h2{
+            margin-right: 11%;
+        }
+        .section h2{
+            margin-right: 11%;
+        }
+        .home h2{
+            margin-right: 10%;
+        }
+    
+        .contact-box
+        {
+            margin-left: -40%;
+        }
+        .contact-box .btn
+        {
+            width: 200px;
+            margin-right: -5%;
+        }
+  
+      .fot {
+        margin-left: -10%;
+         margin-right: -10%;
+      }
+  
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      
+      }
+   
+    
+
+    .center-section img {
+      display: none;
+    }
+
+    .copyright-bar {
+     
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .copyright-bar p {
+        margin: 10px 0;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        margin-left: 0;
+    }
+    .left-section h3{
+        margin-right: -25%;
+        margin-bottom: 10%;
+        margin-top: 21%;
+    }
+    .left-section P{
+        font-size: 0.8rem;
+        margin-left: 10%;
+        text-align: right;
+        white-space: nowrap
+    }
+    .right-section h3{
+        margin-right: 10%;
+        margin-bottom: 10%;
+        margin-top: 21%;
+    }
+    .right-section p {
+        font-size: 0.7rem;
+        margin-right: 20%;
+        white-space: nowrap;
+    }
+}
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
